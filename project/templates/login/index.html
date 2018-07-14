@@ -1,15 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-</head>
+{% include "../components/head.html" %}
 <body>
+<header>
+    {% include "components/header_menu.html" %}
+</header>
+<section class="content">
 <h1>Login page</h1>
 <form action="post">
     <input type="text" maxlength="50">
     <input type="password" maxlength="50">
     <input type="submit">
 </form>
+</section>
+{% include "components/footer.html" %}
 </body>
 </html>
