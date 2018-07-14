@@ -4,15 +4,17 @@
     {% include "components/header_menu.html" %}
 </header>
 <section class="content">
-<h1>Courses page</h1>
-
 {% if courses %}
 
-{% for course in courses %}
-<div>
-    <a href="{{ course.course_url }}">{{ course.course_display_name_ru }}</a>
+<div class="courses">
+    <ul>
+        {% for course in courses %}
+        <li class="course">
+            <a class="course-link" href="{{ course.course_url }}">{{ course.course_display_name_ru }}</a>
+        </li>
+        {% endfor %}
+    </ul>
 </div>
-{% endfor %}
 
 {% else %}
     <p>Ooops... No courses found.</p>
