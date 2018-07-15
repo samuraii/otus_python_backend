@@ -4,12 +4,17 @@
     {% include "components/header_menu.html" %}
 </header>
 <section class="content">
-<h1>Login page</h1>
-<form action="post">
-    <input type="text" maxlength="50">
-    <input type="password" maxlength="50">
-    <input type="submit">
+<div class="login-wrapper">
+<h1 class="login-header">... login here ...</h1>
+<form class="login-form" action="post">
+    <input class="input" type="text" maxlength="50" placeholder="login">
+    <input class="input" type="password" maxlength="50" placeholder="password">
+    <input class="button" type="submit">
 </form>
+<p class="login-register">
+    <a href="/registration">don't have an account?</a>
+</p>
+</div>
 </section>
 {% include "components/footer.html" %}
 </body>

@@ -1,0 +1,44 @@
+.login-wrapper {
+    margin: 0 auto;
+    max-width: 350px;
+}
+
+.login-form {
+    display: block;
+}
+
+.login-header {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+}
+
+.login-wrapper input {
+    display: block;
+}
+
+.login-wrapper .input {
+    margin-top: 15px;
+    border: none;
+    border-bottom: 1px solid blue;
+    font-size: 25px;
+}
+
+.login-wrapper .button {
+    background-color: #4CAF50; /* Green */
+    margin-top: 25px;
+}
+
+.login-register {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-register a {
+    text-decoration: none;
+}
+
+.login-register a:hover {
+    text-decoration: underline;
+}
