@@ -39,8 +39,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'main_app',
     'help',
-    'login',
-    'registration',
     'courses'
 ]
 
@@ -123,3 +121,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     STATIC_DIR,
 ]
+
+ACCOUNT_ACTIVATION_DAYS = 7 # One-week activation window; you may, of course, use a different value.
+
+REGISTRATION_OPEN = True
+
+REGISTRATION_SALT = "#$%"

@@ -5,15 +5,14 @@
 </header>
 <section class="content">
 <div class="login-wrapper">
-<h1 class="login-header">... login here ...</h1>
 <form class="login-form" action="post">
-    <input class="input" type="text" maxlength="50" placeholder="login">
-    <input class="input" type="password" maxlength="50" placeholder="password">
+    <input class="input" type="text" maxlength="50" placeholder="login" required>
+    <input class="input" type="password" maxlength="50" placeholder="password" required>
     <input class="button" type="submit">
+    <p class="login-register">
+        <a href="/registration">don't have an account?</a>
+    </p>
 </form>
-<p class="login-register">
-    <a href="/registration">don't have an account?</a>
-</p>
 </div>
 </section>
 {% include "components/footer.html" %}

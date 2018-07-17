@@ -1,0 +1,24 @@
+{% include "../components/head.html" %}
+<body>
+<header>
+    {% include "components/header_menu.html" %}
+</header>
+<section class="content">
+    <div class="register-wrapper">
+        <form class="register-form" method="post" action="/">
+            {{ form }}
+            {% csrf_token %}
+            <input class="input" name="email" type="text" maxlength="50" placeholder="email" required>
+            <input class="input" name="username" type="text" maxlength="50" placeholder="username" required>
+            <input class="input" name="password1" type="password" maxlength="50" placeholder="password" required>
+            <input class="input" name="password2" type="password" maxlength="50" placeholder="confirm password" required>
+            <input class="button" type="submit">
+        </form>
+        <p class="register-login">
+            <a href="/login">already have an account?</a>
+        </p>
+    </div>
+    </section>
+    {% include "components/footer.html" %}
+</body>
+</html>

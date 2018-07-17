@@ -1,5 +1,5 @@
-.login-wrapper {
-    height: 300px;
+.register-wrapper {
+    height: 350px;
     max-width: 350px;
     width: 100%;
     overflow: auto;
@@ -22,32 +22,32 @@
     font-size: 30px;
 }
 
-.login-wrapper input {
+.register-wrapper input {
     display: block;
 }
 
-.login-wrapper .input {
+.register-wrapper .input {
     margin-top: 15px;
     border: none;
     border-bottom: 1px solid blue;
     font-size: 25px;
 }
 
-.login-wrapper .button {
+.register-wrapper .button {
     background-color: #4CAF50; /* Green */
     margin-top: 25px;
 }
 
-.login-register {
+.register-login {
     width: 100%;
     text-align: center;
     margin-top: 15px;
 }
 
-.login-register a {
+.register-login a {
     text-decoration: none;
 }
 
-.login-register a:hover {
+.register-register a:hover {
     text-decoration: underline;
 }
