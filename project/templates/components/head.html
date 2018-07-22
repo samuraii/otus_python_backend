@@ -16,5 +16,8 @@
 {% endif %} 
 {% if "registration/register" in request.path %}</p>
 <link rel="stylesheet" href="{% static "css/registration.css" %}">
-{% endif %}  
+{% endif %}
+{% if "/help" in request.path %}</p>
+<link rel="stylesheet" href="{% static "css/help.css" %}">
+{% endif %}   
 </head>

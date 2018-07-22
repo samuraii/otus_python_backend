@@ -6,16 +6,26 @@
 <section class="content">
     <div class="register-wrapper">
     <form class="register-form" method="post">
-        {{ form }}
         {% csrf_token %}
-        <input class="input" name="email" type="text" maxlength="50" placeholder="email" required>
-        <input class="input" name="username" type="text" maxlength="50" placeholder="username" required>
-        <input class="input" name="password1" type="password" maxlength="50" placeholder="password" required>
-        <input class="input" name="password2" type="password" maxlength="50" placeholder="confirm password" required>
+        {{ form.username }}
+        <label class="register-form_label" for="{{ form.username.id_for_label }}">{{ form.username.label }}</label>
+        {{ form.email }}
+        <label class="register-form_label" for="{{ form.email.id_for_label }}">{{ form.email.label }}</label>
+        {{ form.password1 }}
+        <label class="register-form_label" for="{{ form.password1.id_for_label }}">{{ form.password1.label }}</label>
+        {{ form.password2 }}
+        <label class="register-form_label" for="{{ form.password2.id_for_label }}">{{ form.password2.label }}</label>
+    {% if form.subject.errors %}
+    <ol>
+    {% for error in form.subject.errors %}
+        <li><strong>{{ error|escape }}</strong></li>
+    {% endfor %}
+    </ol>
+    {% endif %}
         <input class="button" type="submit">
     </form>
     <p class="register-login">
-        <a href="/login">already have an account?</a>
+        <a href="/registration/login">already have an account?</a>
     </p>
     </div>
     </section>

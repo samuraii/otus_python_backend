@@ -1,5 +1,5 @@
-.login-wrapper {
-    height: 300px;
+.register-wrapper {
+    height: 350px;
     max-width: 350px;
     width: 100%;
     overflow: auto;
@@ -16,39 +16,38 @@
     display: block;
 }
 
-input {
+.login-header {
     display: block;
-    width: 100%;
-    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.register-wrapper input {
+    display: block;
+}
+
+.register-wrapper .input {
+    margin-top: 15px;
     border: none;
     border-bottom: 1px solid blue;
     font-size: 25px;
-    text-align: center;
-    outline: none;
 }
 
-.login-form_label {
-    display: block;
-    margin-top: 5px;
-    color: gray;
-    font-size: 10px;
-}
-
-.login-wrapper .button {
+.register-wrapper .button {
     background-color: #4CAF50; /* Green */
     margin-top: 25px;
 }
 
-.login-register {
+.register-login {
     width: 100%;
     text-align: center;
     margin-top: 15px;
 }
 
-.login-register a {
+.register-login a {
     text-decoration: none;
 }
 
-.login-register a:hover {
+.register-register a:hover {
     text-decoration: underline;
 }

@@ -1,0 +1,17 @@
+.courses {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
+.course {
+    height: 40px;
+    margin-top: 15px;
+    background-color: aquamarine;
+    text-align: center;
+    line-height: 40px;
+}
+
+.course-link {
+    text-decoration: none;
+    color: black;
+}

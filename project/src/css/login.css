@@ -16,22 +16,21 @@
     display: block;
 }
 
-input {
+.login-header {
     display: block;
-    width: 100%;
-    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.login-wrapper input {
+    display: block;
+}
+
+.login-wrapper .input {
+    margin-top: 15px;
     border: none;
     border-bottom: 1px solid blue;
     font-size: 25px;
-    text-align: center;
-    outline: none;
-}
-
-.login-form_label {
-    display: block;
-    margin-top: 5px;
-    color: gray;
-    font-size: 10px;
 }
 
 .login-wrapper .button {

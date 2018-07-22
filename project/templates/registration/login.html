@@ -6,8 +6,11 @@
 <section class="content">
 <div class="login-wrapper">
 <form class="login-form" action="post">
-    <input class="input" type="text" maxlength="50" placeholder="login" required>
-    <input class="input" type="password" maxlength="50" placeholder="password" required>
+    {% csrf_token %}
+    {{ form.username }}
+    <label class="login-form_label" for="{{ form.username.id_for_label }}">{{ form.username.label }}</label>
+    {{ form.password }}
+    <label class="login-form_label" for="{{ form.password.id_for_label }}">{{ form.password.label }}</label>
     <input class="button" type="submit">
     <p class="login-register">
         <a href="/registration">don't have an account?</a>
