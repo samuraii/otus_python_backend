@@ -107,3 +107,4 @@ venv.bak/
 project/project/settings.py
 project/node_modules
 .DS_Store
+project/project/settings.py

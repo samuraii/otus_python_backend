@@ -1,17 +1,16 @@
 from django.db import models
 
 
-class Course(models.Model):
+class Courses(models.Model):
     id = models.IntegerField(unique=True, primary_key=True)
-    course_name = models.CharField(max_length=256, unique=True)
+    subject = models.CharField(max_length=256, unique=False)
+    course_display_level_ru = models.CharField(max_length=256, unique=True)
+    course_display_level_en = models.CharField(max_length=256, unique=True)
+    course_display_topics_ru = models.CharField(max_length=256, unique=True)
+    course_display_topics_en = models.CharField(max_length=256, unique=True)
+    course_description_ru = models.TextField()
+    course_description_en = models.TextField()
+    course_url = models.CharField(max_length=256)
 
     def __str__(self):
-        return self.course_name
-
-
-class CourseDescription(models.Model):
-    id = models.ForeignKey(Course, primary_key=True)
-    course_display_name_ru = models.CharField(max_length=256, unique=True)
-    course_display_name_en = models.CharField(max_length=256, unique=True)
-    course_description = models.TextField(unique=True)
-    course_url = models.TextField()
+        return self.course_url

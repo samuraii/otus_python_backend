@@ -19,6 +19,7 @@ from main_app import views
 
 urlpatterns = [
     url(r'^$', views.index),
+    url(r'logout/', views.logout_view),
     url(r'admin', admin.site.urls),
     url(r'^help/', include('help.urls')),
     url(r'^courses/', include('courses.urls')),

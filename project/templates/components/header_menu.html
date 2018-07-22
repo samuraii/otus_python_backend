@@ -4,6 +4,11 @@
         <li class="top-menu-item"><a class="top-menu-item_link" href="/registration/register/">Register</a></li>
         <li class="top-menu-item"><a class="top-menu-item_link" href="/courses/">Courses</a></li>
         <li class="top-menu-item"><a class="top-menu-item_link" href="/help/">Help</a></li>
-        <li class="top-menu-item"><a class="top-menu-item_link login" href="/registration/login/">Login</a></li>
+        {% if not user.is_active %}
+            <li class="top-menu-item"><a class="top-menu-item_link login" href="/registration/login/">Login</a></li>
+        {% else %}
+            <li class="top-menu-item"><a class="top-menu-item_link" href="/user/personal/">{{ user.username }}</a></li>
+            <li class="top-menu-item"><a class="top-menu-item_link logout" href="/logout/">Logout</a></li>
+        {% endif %}
     </ul>
 </div>

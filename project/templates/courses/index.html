@@ -10,7 +10,7 @@
     <ul>
         {% for course in courses %}
         <li class="course">
-            <a class="course-link" href="{{ course.course_url }}">{{ course.course_display_name_ru }}</a>
+            <a class="course-link" href="{{ course.course_url }}">{{ course.subject }} : {{ course.course_display_level_ru }}</a>
         </li>
         {% endfor %}
     </ul>

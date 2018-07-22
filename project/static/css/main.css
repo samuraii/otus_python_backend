@@ -75,6 +75,17 @@ header {
     float: right;
 }
 
+.logout {
+    color: red;
+}
+
+.logout-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 25px;
+}
+
 /* CONTENT */
 section.content {
     margin-top: 100px;

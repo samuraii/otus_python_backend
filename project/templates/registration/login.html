@@ -6,7 +6,6 @@
 <section class="content">
 <div class="login-wrapper">
 <form class="login-form" action="post">
-    {% csrf_token %}
     {{ form.username }}
     <label class="login-form_label" for="{{ form.username.id_for_label }}">{{ form.username.label }}</label>
     {{ form.password }}
